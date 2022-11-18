@@ -41,4 +41,14 @@ public class Contact {
 	public void setMessage(String message) {
 		this.message = message;
 	}
+
+	@Override
+	public String toString() {
+		return "Contact{" +
+				"name='" + name + '\'' +
+				", email='" + email + '\'' +
+				", subject='" + subject + '\'' +
+				", message='" + message + '\'' +
+				'}';
+	}
 }

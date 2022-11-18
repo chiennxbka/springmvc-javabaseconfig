@@ -14,6 +14,7 @@ public class ContactController {
 
 	@PostMapping(value = "/contact")
 	public ModelAndView contact(ModelMap model, @ModelAttribute("contact") Contact contact, BindingResult result) {
+		System.out.println(contact);
 		return new ModelAndView("index", model);
 	}
 }
